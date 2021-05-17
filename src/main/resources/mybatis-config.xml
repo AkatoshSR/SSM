@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 打印日志 -->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <!--  在 typeAliases 中设置了一个 package 的别名扫描路径，在该路径下的 Java 实体类都可以拥有一个别名（即首字母小写的类名）  -->
+    <typeAliases>
+        <package name="com.sqx.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper class="com.sqx.dao.BookMapper"/>
+        <mapper class="com.sqx.dao.UserMapper"/>
+    </mappers>
+
+</configuration>
