@@ -9,7 +9,9 @@
   <body>
 
   <h3>
-    <a href="${pageContext.request.contextPath}/book/allBook" style="text-align: center">进入书籍页面</a>
+    <a href="${pageContext.request.contextPath}/book/allBook" style="position: absolute; top: 45%; left: 45%;
+        text-decoration: none;
+        color: #7ba92c">进入书籍页面</a>
   </h3>
 
   </body>
